@@ -1,0 +1,15 @@
+Architecture:
+1. L2                                                — Acc: 0.7, overfitting
+2. L1L2                                              — Acc: 0.7, overfitting
+3. L1L2, Dropout                                     — Acc: 0.7 overfitting
+4. L1L2, Dropout, model reduction                    — Acc: 0.7 less overfitting
+5. L1L2, more Dropout, model reduction               — Acc: 0.7 even less overfitting
+Augmentation on model 5
+1. Rotation 0.3 — Acc: 0.5  no overfitting
+2. Flip         — Acc: 0.6  no overfitting
+3. Translation  — Acc: 0.55 a bit overfitting
+4. Zoom         — Acc: 0.7  no overfitting
+5. Contrast     — Acc: 0.7  no overfitting
+6- All above    — Acc: 0.6 no overfitting
+WideResNet 28-10:
+1. Acc: 0.85 some overfitting
